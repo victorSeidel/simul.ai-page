@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Plataforma de IA para Concursos e Estudos com Simulados Personalizados | simul.ai</title>
+    <meta name="description" content="Transforme editais em guias de estudo personalizados com IA. Crie simulados customizados, resumos inteligentes e acelere sua aprovação em concursos públicos.">
+    <meta name="keywords" content="concursos públicos, simulados, IA educação, editais, estudos personalizados, aprovação concursos, inteligência artificial, preparação concursos">
+    <meta name="author" content="simul.ai">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://simul.ai">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simul.ai">
+    <meta property="og:title" content="simul.ai - Plataforma de IA para Concursos e Estudos">
+    <meta property="og:description" content="Transforme editais em guias de estudo personalizados com IA. Crie simulados customizados e acelere sua aprovação.">
+    <meta property="og:image" content="https://simul.ai/assets/hero_ai_education.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="simul.ai">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://simul.ai">
+    <meta property="twitter:title" content="simul.ai - Plataforma de IA para Concursos e Estudos">
+    <meta property="twitter:description" content="Transforme editais em guias de estudo personalizados com IA. Crie simulados customizados e acelere sua aprovação.">
+    <meta property="twitter:image" content="https://simul.ai/assets/hero_ai_education.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="simul.ai">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "simul.ai",
+        "description": "Plataforma de inteligência artificial para estudantes e concurseiros que transforma editais em guias de estudo personalizados e simulados customizados.",
+        "url": "https://simul.ai",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Plano Gratuito",
+                "price": "0",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plano Básico",
+                "price": "29",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plano Premium",
+                "price": "59",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plano Pro",
+                "price": "99",
+                "priceCurrency": "BRL"
+            }
+        ],
+        "creator": {
+            "@type": "Organization",
+            "name": "simul.ai",
+            "url": "https://simul.ai"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">simul.ai</span>
+                </div>
+                
+                <nav class="nav-desktop" aria-label="Navegação principal">
+                    <a href="#features" class="nav-link">Recursos</a>
+                    <a href="#benefits" class="nav-link">Benefícios</a>
+                    <a href="#pricing" class="nav-link">Planos</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <button class="btn btn-primary">Começar Grátis</button>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile hidden" id="mobileMenu" aria-label="Menu mobile">
+                <a href="#features" class="nav-link-mobile">Recursos</a>
+                <a href="#benefits" class="nav-link-mobile">Benefícios</a>
+                <a href="#pricing" class="nav-link-mobile">Planos</a>
+                <a href="#faq" class="nav-link-mobile">FAQ</a>
+                <button class="btn btn-primary btn-full">Começar Grátis</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Desbloqueie seu Potencial de Estudo com IA
+                    </h1>
+                    <p class="hero-description">
+                        Transforme editais complexos em guias de estudo personalizados, resumos inteligentes e simulados sob medida. 
+                        Sua aprovação começa aqui!
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg">
+                            Experimente Grátis
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                            Sem cartão de crédito
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                            Configuração em 1 minuto
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/hero_ai_education.jpg" alt="Inteligência Artificial na Educação - Estudante utilizando tecnologia avançada para estudos" class="hero-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-content">
+                            <div class="stats-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                </svg>
+                            </div>
+                            <div class="stats-text">
+                                <p class="stats-number">+95% de Aprovação</p>
+                                <p class="stats-description">Taxa de sucesso dos usuários</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge badge-purple">Como Funciona</div>
+                <h2 class="section-title">Recursos Principais</h2>
+                <p class="section-description">
+                    Descubra como nossa IA transforma sua experiência de estudo em algo mais eficiente e personalizado
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Análise Inteligente de Editais</h3>
+                    <p class="feature-description">
+                        Upload simples de qualquer edital e análise automática por IA para extrair informações essenciais.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Resumos Personalizados</h3>
+                    <p class="feature-description">
+                        Geração automática de resumos detalhados e organizados por disciplinas e tópicos.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Simulados Customizados</h3>
+                    <p class="feature-description">
+                        Criação de questões personalizadas baseadas no conteúdo específico do seu edital.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v5h5"/>
+                            <path d="M3 8a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 4"/>
+                            <path d="M21 21v-5h-5"/>
+                            <path d="M21 16a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 20"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Acompanhamento de Progresso</h3>
+                    <p class="feature-description">
+                        Monitore seu desempenho e identifique áreas que precisam de mais atenção.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <div class="badge badge-blue">Vantagens Exclusivas</div>
+                    <h2 class="section-title">Por que escolher o simul.ai?</h2>
+                    <p class="section-description">
+                        Nossa plataforma oferece benefícios únicos que transformarão sua jornada de estudos
+                    </p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Economia de Tempo</h3>
+                                <p class="benefit-description">Reduza horas de preparação manual com inteligência</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                                    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Estudo Personalizado</h3>
+                                <p class="benefit-description">Conteúdo adaptado especificamente para suas necessidades</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Maior Eficiência</h3>
+                                <p class="benefit-description">Foque no que realmente importa para sua aprovação</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Tecnologia de Ponta</h3>
+                                <p class="benefit-description">IA avançada a serviço do seu aprendizado e sucesso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-images">
+                    <div class="images-grid">
+                        <img src="assets/ai_education_1.jpg" alt="IA na Educação - Tecnologia educacional avançada" class="benefit-img benefit-img-1">
+                        <img src="assets/student_ai_1.jpg" alt="Estudante utilizando IA para estudos" class="benefit-img benefit-img-2">
+                        <img src="assets/tech_education.jpg" alt="Tecnologia na Educação - Ambiente de aprendizado moderno" class="benefit-img benefit-img-3">
+                        <div class="stats-box">
+                            <div class="stats-number-large">10k+</div>
+                            <div class="stats-label">Estudantes Aprovados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge badge-green">Planos e Preços</div>
+                <h2 class="section-title">Escolha o plano ideal para você</h2>
+                <p class="section-description">
+                    Desde o plano gratuito até recursos avançados para concurseiros profissionais
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plano Gratuito -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Gratuito</h3>
+                        <div class="plan-price">
+                            <span class="price">R$ 0</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Perfeito para começar</p>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                1 edital por mês
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Resumos básicos
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                5 simulados
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Suporte por email
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Suporte por email
+                            </li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full">Começar Grátis</button>
+                    </div>
+                </div>
+
+                <!-- Plano Básico -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Básico</h3>
+                        <div class="plan-price">
+                            <span class="price">R$ 29</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Para estudantes dedicados</p>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                5 editais por mês
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Resumos detalhados
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Simulados ilimitados
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Guias de estudo
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Suporte prioritário
+                            </li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full">Assinar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="pricing-card pricing-card-popular">
+                    <div class="popular-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Premium</h3>
+                        <div class="plan-price">
+                            <span class="price">R$ 59</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Máximo desempenho</p>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Editais ilimitados
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Análise avançada por IA
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Simulados adaptativos
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Relatórios detalhados
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Suporte 24/7
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary btn-full">Assinar Agora</button>
+                    </div>
+                </div>
+
+                <!-- Plano Pro -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="price">R$ 99</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Para profissionais</p>
+                    </div>
+                    <div class="pricing-content">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Tudo do Premium
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Mentoria com IA
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Análise preditiva
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                Grupos de estudo
+                            </li>
+                            <li class="feature-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                API para integrações
+                            </li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full">Assinar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge badge-yellow">Depoimentos</div>
+                <h2 class="section-title">O que nossos usuários dizem</h2>
+                <p class="section-description">
+                    Histórias reais de sucesso de quem transformou seus estudos com o simul.ai
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-content">
+                        "O simul.ai revolucionou minha forma de estudar. Consegui organizar todo o conteúdo do edital em questão de minutos!"
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Maria Silva</p>
+                        <p class="author-role">Aprovada em Concurso Federal</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-content">
+                        "Os simulados personalizados me ajudaram a identificar exatamente onde precisava melhorar. Recomendo!"
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="author-name">João Santos</p>
+                        <p class="author-role">Estudante de Direito</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-content">
+                        "Economizei horas de preparação e consegui focar no que realmente importava. Ferramenta indispensável!"
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Ana Costa</p>
+                        <p class="author-role">Concurseira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge badge-gray">Perguntas Frequentes</div>
+                <h2 class="section-title">Tire suas dúvidas</h2>
+                <p class="section-description">
+                    Respostas para as perguntas mais comuns sobre o simul.ai
+                </p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                        <h3>Como funciona a análise de editais?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossa IA analisa automaticamente o documento do edital, extraindo disciplinas, tópicos, pesos e requisitos, organizando tudo de forma clara e estruturada.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                        <h3>Posso usar com qualquer tipo de concurso?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O simul.ai funciona com editais de concursos públicos, vestibulares, certificações profissionais e qualquer processo seletivo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                        <h3>Os simulados são baseados em questões reais?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossos simulados são gerados com base no conteúdo específico do seu edital, seguindo padrões de bancas organizadoras conhecidas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6,9 12,15 18,9"/>
+                        </svg>
+                        <h3>Posso cancelar minha assinatura a qualquer momento?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, você pode cancelar sua assinatura a qualquer momento sem taxas adicionais. Seu acesso continuará até o final do período pago.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para revolucionar seus estudos?</h2>
+                <p class="cta-description">
+                    Junte-se a milhares de estudantes que já transformaram sua preparação com o simul.ai
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-white btn-lg">
+                        Começar Grátis Agora
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline-white btn-lg">Falar com Especialista</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">simul.ai</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando a educação com inteligência artificial para estudantes e concurseiros.
+                    </p>
+                    <div class="footer-stats">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <span>1k+ usuários ativos</span>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="logo-text">Contato</h3>
+                    <ul class="footer-list">
+                        <li><a href="mailto:social.vectoo@gmail.com" aria-label="Contato via E-mail (social.vectoo@gmail.com)">social.vectoo@gmail.com</a></li>
+                        <li><a href="https://wa.me/5531995639780" aria-label="Contato via WhatsApp (31 99563-9780)">+55 31 99563-9780</a></li>
+                        <li><a href="https://wa.me/5531996638431" aria-label="Contato via WhatsApp (31 99663-8431)">+55 31 99663-8431</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vectoo.br/" target="_blank" aria-label="Instagram da Vectoo"><i class="fab fa-instagram"></i><span class="sr-only">Instagram</span></a>
+                    <a href="https://www.linkedin.com/company/vectoo" target="_blank" aria-label="LinkedIn da Vectoo"><i class="fab fa-linkedin-in"></i><span class="sr-only">LinkedIn</span></a>
+                    <a href="https://x.com/vectoobr" target="_blank" aria-label="Perfil no X (Twitter)"><i class="fab fa-x-twitter"></i><span class="sr-only">X Twitter</span></a>
+                </div>
+                <p>&copy; 2025 Vectoo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
