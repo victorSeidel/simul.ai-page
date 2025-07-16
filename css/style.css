@@ -623,7 +623,7 @@ body {
 
 @media (min-width: 768px) {
     .pricing-card {
-        height: 500px;
+        height: 550px;
     }
 }
 
@@ -713,6 +713,10 @@ body {
 .features-list .feature-item svg {
     color: #10b981;
     flex-shrink: 0;
+}
+
+.features-list .feature-item.x-icon svg {
+    color: red;
 }
 
 /* Testimonials Section */
