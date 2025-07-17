@@ -187,18 +187,7 @@ document.addEventListener('DOMContentLoaded', function()
                         event_category: 'CTA',
                         event_label: button.textContent.trim()
                     });
-                }
-                
-                // Redirect to signup/pricing page (replace with your actual URLs)
-                if (button.textContent.includes('Começar Grátis') || 
-                    button.textContent.includes('Experimente Grátis')) 
-                {
-                    window.location.href = '#pricing'; // Replace with actual signup URL
-                } 
-                else if (button.textContent.includes('Assinar Agora')) 
-                {
-                    window.location.href = '#pricing'; // Replace with actual pricing URL
-                }
+                }              
             });
         }
     });
