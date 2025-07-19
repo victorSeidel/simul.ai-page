@@ -92,9 +92,8 @@ const observer = new IntersectionObserver(function(entries)
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', function() 
 {
-    const animateElements = document.querySelectorAll(
-        '.feature-card, .benefit-item, .pricing-card, .testimonial-card, .faq-item, .section-header'
-    );
+    const animateElements = document.querySelectorAll( `.feature-card, .btn-comparison, .benefit-item, .pricing-card, .pricing-cta, .testimonial-card, 
+        .faq-item, .section-header, .btn-benefit, .btn-testimonial`);
     
     animateElements.forEach(el => 
     {
@@ -301,4 +300,3 @@ window.addEventListener('beforeunload', function() {
     const timeOnPage = Math.round((Date.now() - startTime) / 1000);
     trackEvent('Engagement', 'Time on Page', `${timeOnPage} seconds`);
 });
-
