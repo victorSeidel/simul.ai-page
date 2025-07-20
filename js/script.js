@@ -92,7 +92,7 @@ const observer = new IntersectionObserver(function(entries)
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', function() 
 {
-    const animateElements = document.querySelectorAll( `.feature-card, .btn-comparison, .benefit-item, .pricing-card, .pricing-cta, .testimonial-card, 
+    const animateElements = document.querySelectorAll( `.feature-card, .btn-comparison, .benefit-item, .pricing-card, .pricing-cta, .pricing-note, .testimonial-card, 
         .faq-item, .section-header, .btn-benefit, .btn-testimonial`);
     
     animateElements.forEach(el => 
